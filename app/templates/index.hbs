@@ -1,0 +1,8 @@
+<div id="pressask">
+  {{new-question save2="save3"}}
+</div>
+<ul>
+  {{#each model.questions as |question|}}
+    <li>{{question-tile question=question}}</li>
+  {{/each}}
+</ul>

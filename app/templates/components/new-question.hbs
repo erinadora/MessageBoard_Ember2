@@ -1,0 +1,19 @@
+<div id="asks">
+  {{#if addNewQuestion}}
+  <h1 id="nq">Ask a question.</h1>
+  <form>
+    <div class="form-group">
+      <label for="author">Your name</label>
+      {{input value=author id="author"}}
+    </div>
+
+    <div class="form-group">
+      <label for="userQuestion">What do you want to know?</label>
+      {{input value=userQuestion id="userQuestion"}}
+    </div>
+    <button {{action 'save1'}}>Submit</button>
+  </form>
+{{else}}
+  <button class="ask" {{action 'questionFormShow'}}>Ask</button>
+{{/if}}
+</div>

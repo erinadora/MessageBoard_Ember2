@@ -1,0 +1,21 @@
+{ "questions" : [{
+    "userQuestion": "Do you think it's bad that I want to vote for Trump?",
+    "author": "Liam",
+    "city": "Brooklyn"
+  }, {
+    "userQuestion": "What are some fun things to do in Istanbul?",
+    "author": "Devendra",
+    "city": "Poipu, Kauai"
+  }, {
+    "userQuestion": "Are vitamin deficiencies a real thing?",
+    "author": "Liora",
+    "city": "Istanbul"
+  }],
+  "answers": [{
+    "author": "Erin",
+    "city": "Tokyo"
+  }, {
+    "author": "Jamie",
+    "city": "Miami"
+  }]
+}
