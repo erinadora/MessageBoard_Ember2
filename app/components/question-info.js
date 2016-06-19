@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  favoriteQueston: Ember.inject.service(),
+
   actions: {
     save(params) {
       this.sendAction('save', params);

@@ -1,7 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  updateRentalForm: false,
+  favoriteQuestion: Ember.inject.service(),
+  updateQuestionForm: false,
   actions: {
     updateQuestionForm() {
       this.set('updateQuestionForm', true);
@@ -14,6 +15,6 @@ export default Ember.Component.extend({
       };
       this.set('updateQuestionForm', false);
       this.sendAction('update', question, params);
-    }
+    },
   }
 });

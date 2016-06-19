@@ -6,3 +6,9 @@
     <p id="cards">{{question.author}} <span id="from">//</span> {{question.city}}</p>
   </li>
 </div>
+
+{{#if question.onList}}
+  <h2>Added</h2>
+{{else}}
+  <button id='heart' {{action 'addToFavorites' question}}>&#9829;</button>
+{{/if}}
