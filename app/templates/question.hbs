@@ -1,14 +1,4 @@
-<h2>{{model.userQuestion}}</h2>
-<h3>from {{model.author}} in {{model.city}}</h3>
-<h3>Feel free to update the question or answer it!</h3>
 
-{{#each model.answer as |answer|}}
-  {{answer-tile answer = answer}}
-{{/each}}
-
-{{new-answer saveAnswer="saveAnswer"}}
-
+{{question-info destroyQuestion="destroyQuestion" question=model}}
 {{update-question question=model update="update"}}
-<button {{action 'delete' question}}>x</button>
-
-{{popular-answer question}}
+{{new-answer saveAnswer="saveAnswer"}}

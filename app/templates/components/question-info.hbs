@@ -1,0 +1,10 @@
+<h1>{{question.userQuestion}}</h1>
+<h3>from {{question.author}}</h3>
+<h3>Feel free to update the question or answer it!</h3>
+
+{{#each model.answer as |answer|}}
+  {{answer-tile answer = answer}}
+{{/each}}
+
+<button {{action 'addToFavorites' post}}>Favorite</button>
+<button {{action 'delete' post}}>x</button>
